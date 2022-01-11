@@ -389,7 +389,7 @@ template {
 }
 
 .search__input {
-  width: 250px;
+  width: 350px;
   height: 100%;
   padding-left: 23px;
   padding-right: 75px;
@@ -408,6 +408,7 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
