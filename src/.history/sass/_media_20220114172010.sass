@@ -1,0 +1,78 @@
+@media (max-width: 1200px)
+   .container
+      max-width: 960px
+@media (max-width: 992px)
+   .container
+      max-width: 700px
+   .logo
+      width: 132px
+   .navbar
+      &-top
+         padding: 30px 0
+      &__search
+         margin-left: 7%
+      &-menu
+         padding: 20px 0
+         &__list
+            &:first-child
+               margin-left: 14px
+            &:last-child
+               margin-right: 14px
+         &__link
+            font-size: 12px  
+   .search
+      &__input
+         margin-top: 0px
+         width: 339px
+         padding-left: 21px
+      &__img
+            margin-top: 4px
+   .user
+      &__avatar
+         margin-top: 0px
+      &__name
+         margin-top: 4px
+         margin-right: 1px
+@media (max-width: 768px)
+   .container
+      max-width: 576px
+      width: 92%
+   .navbar
+      &__search, &-menu, &__user
+         display: none 
+   .menu
+      &-button
+         display: flex
+         width: 16px
+         height: 11px
+         padding: 0
+         align-items: center
+         justify-content: space-between
+         flex-direction: column
+         background-color: $light
+         border: none
+         cursor: pointer
+         &__line
+            width: 16px
+            height: 1px
+            background-color: $text-colors
+   .hotel
+      &-info
+         &__rating
+            display: none
+         &__offer
+            
+@media (max-width: 576px)
+   .container
+      max-width: 95%
+      .navbar
+      &-top
+         padding: 22px 0
+         &__menu
+            &-button
+               margin-top: 7px
+   .logo
+      width: 99px
+@media (min-width: 320px) and (max-width: 480px)
+   .container
+      max-width: 90%
