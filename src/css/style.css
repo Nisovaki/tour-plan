@@ -655,12 +655,12 @@ img {
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
 
-.swiper-slider::after {
+.swiper-slide::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -703,6 +703,7 @@ img {
 .slider {
   width: 728px;
   margin-left: 4px;
+  height: 450px;
 }
 
 .booking {
@@ -833,7 +834,7 @@ img {
   width: 347px;
   height: 213px;
   background-color: #000;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
@@ -841,6 +842,15 @@ img {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slider__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -897,6 +907,21 @@ img {
   .hotel-description__space {
     display: inline;
   }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .breadcrumb-list {
     padding: 19px 0;
   }
@@ -906,8 +931,15 @@ img {
   .rating__counter {
     margin-left: 0;
   }
+  .booking {
+    width: 340px;
+  }
   .slider {
     margin-left: 0;
+    width: 100%;
+  }
+  .map-cart {
+    width: 340px;
   }
 }
 
@@ -973,6 +1005,22 @@ img {
             order: -1;
     margin-left: 0;
   }
+  .hotel-right {
+    min-height: 450px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider {
+    height: 350px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map-cart {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -987,6 +1035,12 @@ img {
   }
   .logo {
     width: 99px;
+  }
+  .slider {
+    height: 300px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
   }
 }
 
