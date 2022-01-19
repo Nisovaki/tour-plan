@@ -829,10 +829,13 @@ img {
   cursor: pointer;
 }
 
-.map {
+.map-cart {
   width: 347px;
   height: 213px;
   background-color: #000;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
