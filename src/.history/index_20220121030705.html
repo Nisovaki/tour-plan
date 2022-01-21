@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Подключение JS Api яндекс карты -->
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=3b321349-20a3-44c7-84a7-686ab7601116&lang=ru_RU" type="text/javascript"></script>
+   <script src="search_control_ppo.js" type="text/javascript"></script>
+   <script src="js/map.js"></script>
+   <!-- Подключение favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
+   <link rel="manifest" href="img/Favicon/site.webmanifest">
+   <link rel="mask-icon" href="img/Favicon//safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   <!-- Шрифт Mulish + Nunito -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet">
+   <!-- Подключение слайдера -->
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <!-- Подключение css -->
+   <link rel="stylesheet" href="css/style.css">
+   <title>Best tour plan - Hotel Booking</title>
+</head>
+<body>
+   <header class="navbar">
+      <div class="container">
+         <div class="navbar-top">
+            <a href="https://oshcherbakova.ru/tour-plan/" class="logo">
+               <img src="img/header/horizontal-logo.svg" alt="Logo: Best tour plan" class="logo__image">
+            </a>
+
+            <form action="#" class="search navbar__search">
+               <input type="text" class="search__input" placeholder="Search Location">
+               <button class="search__button">
+                  <img src="img/header/search.svg" alt="Icon: search" class="search__img">
+               </button>
+            </form>
+
+            <a href="#" class="user navbar__user">
+               <img src="img/header/user-avatar.jfif" alt="avatar: Nathan" class="user__avatar">
+               <span class="user__name">Nathan</span>
+            </a>
+
+            <button class="menu-button  navbar-top__menu-button">
+               <span class="menu-button__line"></span>
+               <span class="menu-button__line"></span>
+               <span class="menu-button__line"></span>
+            </button>
+         </div>
+         <!-- /.header-top -->
+      </div>
+      <!-- /.container -->
+      <div class="navbar-bottom">
+         <div class="container">
+            <nav class="navbar-menu">
+               <ul class="navbar-menu__list">
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">All Deals</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Hotels</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Activities</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Restaurants</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Events</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Rodrigues</a>
+                  </li>
+               </ul>
+            </nav>
+            <!-- /.navbar-menu -->
+         </div>
+         <!-- /.container -->
+      </div>
+      <!-- /.navbar-bottom -->
+   </header>
+   <!-- /.header -->
+   <nav class="breadcrumb">
+      <div class="container">
+         <ul class="breadcrumb-list">
+            <li class="breadcrumb-list__item">
+               <a href="#" class="breadcrumb-list__link">Home</a>
+            </li>
+
+            <li class="breadcrumb-list__item">
+               <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+            </li>
+
+            <li class="breadcrumb-list__item">
+               Grand Hilton Hotel
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /.breadcrumb -->
+   <section class="hotel">
+      <div class="container">
+         <div class="hotel-info">
+            <div class="hotel-info__text">
+               <div class="hotel-wrapper">
+                  <div class="stars">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                  </div>
+                  <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
+                  <span class="offer hotel-info__offer">Flash Offer</span>
+                  <p class="hotel-description hotel-info__description">Half-Board<span class="hotel-description__space">&nbsp;</span>/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+               </div>
+            </div>
+            <!-- /.hotel-info__text -->
+            <div class="rating hotel-info__rating">
+               <span class="rating__text">User Rattings</span>
+               <span class="rating__counter">4.5/<span class="rating__counter-sub">5</span></span>
+            </div>
+            <!-- /.hotel-info__rating -->
+         </div>
+         <!-- /.hotel-info -->
+         <div class="hotel-grid">
+            <div class="slider hotel-slider">
+               <!-- Slider main container -->
+               <div class="swiper hotel-swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                     <!-- Slides -->
+                     <div class="swiper-slide hotel-slider__item">
+                        <img class="swiper-slider__image" src="img/hotel/slider.jpg" alt="slide">
+                     </div>
+                     <div class="swiper-slide hotel-slider__item">
+                        <img class="swiper-slider__image" src="img/hotel/slider-2.jpg" alt="slide">
+                     </div>
+                     <div class="swiper-slide hotel-slider__item">
+                        <img class="swiper-slider__image" src="img/hotel/slider-3.jpg" alt="slide">
+                     </div>
+                     <div class="swiper-slide hotel-slider__item">
+                        <img class="swiper-slider__image" src="img/hotel/slider-4.jpg" alt="slide">
+                     </div>
+                     <div class="swiper-slide hotel-slider__item">
+                        <img class="swiper-slider__image" src="img/hotel/slider-5.jpg" alt="slide">
+                     </div>
+                  </div>               
+                  <!-- If we need navigation buttons -->
+                  <button class="hotel-swiper__button hotel-swiper__button--prev"></button>
+                  <button class="hotel-swiper__button hotel-swiper__button--next"></button>
+               </div>
+               <!-- /swiper-container -->
+            </div>
+            <!-- /slider -->
+            <div class="hotel-right">
+               <div class="booking">
+                  <div class="booking__info">
+                     <div class="booking__price">
+                        <span class="booking__start">price starts as</span>
+                        <strong class="booking__pricetag">$ 8,500</strong>
+                        <span class="booking__per-room">per room / night</span>
+                     </div>
+                     <!-- /booking__price -->
+                     <div class="booking-room">
+                        <div class="booking__text">
+                           <img src="img/hotel/user.svg" alt="Icon: user" class="booking__icon">
+                           <span class="booking__description">2 x Guests</span>
+                        </div>
+               
+                        <div class="booking__text">
+                           <img src="img/hotel/home.svg" alt="Icon: home" class="booking__icon">
+                           <span class="booking__description">1 x Room</span>
+                        </div>
+                     </div>
+                     <!-- /.persone-room -->
+                  </div>
+                  <!-- /.booking-info -->
+                  <div class="booking__call-center">
+                     <span class="booking__heading">Quick Booking</span>
+                     <a href="tel:12100" class="booking__number">
+                        <img src="img/hotel/phone-call.svg" alt="Icon: phone">
+                        <span class="booking__num">12100</span></a>
+                  </div>
+                  <!-- /booking__call-center -->
+                  <button class="button booking__button">View Other Options</button>
+               </div>
+               <!-- /.booking -->
+               <div class="map-cart" id="map"></div>
+
+               <!-- <div class="map-cart">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48796.631357628874!2d26.406101527042523!3d40.14697330954294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a9cf23f5434b%3A0x7f21b1425645b6e!2sKULE%20HOTEL!5e0!3m2!1sru!2sru!4v1642716948704!5m2!1sru!2sru" width="347" height="217" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </div> -->
+               
+               <!-- /.map-cart -->
+            </div>
+            <!-- /.hotel-right -->
+         </div>
+         <!-- /hotel-grid -->
+      </div>
+      <!-- /.container -->
+   </section>
+   <!-- /.hotel -->
+
+   <section class="newsletter">
+      <div class="newsletter-wrapper">
+         <h2 class="newsletter-title newsletter__title">
+            subscribe to our
+            <span class="newsletter-title__strong">Newsletter</span>
+         </h2>
+
+         <form action="#" class="subscribe newsletter__subscribe">
+            <input type="text" class="subscribe__input" placeholder="Your email address">
+            <button class="subscribe__button">Send</button>
+         </form>
+      </div>
+   </section>
+   <!-- /.newsletter -->
+
+   <div class="reviews">
+      <div class="container">
+         <h2 class="reviews__title">What people think about us</h2>
+         <!-- Slider -->
+         <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="reviews-slider__item">
+                     <div class="reviews-slider__profile">
+                        <img src="img/reviews/reviews-avatar-2.jpeg" alt="Photo: Kristina Skoftok" class="reviews-slider__avatar">
+                        <h3 class="reviews-slider__username">Kristina Skoftok</h3>
+                        <span class="reviews-slider__date">Stayed 20 Nov, 2019</span>
+                        <div class="reviews-slider__rating">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                        </div>
+                        <!-- /.reviews-slider__rating -->
+                     </div>
+                     <!-- /.reviews-slider__profile -->
+                     <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repudiandae explicabo sint. A ut cum reprehenderit dolorum minima voluptatum. Dolor praesentium ex magnam recusandae ducimus quod corrupti voluptatem, aspernatur animi.
+                     Ipsa cum exercitationem adipisci esse dolorum iste cupiditate modi facere? Unde quo nulla soluta eum, amet qui, impedit aut consectetur at culpa earum enim veritatis molestias et. Quasi, ab suscipit?
+                     Reprehenderit dicta aspernatur autem consequatur corporis eum facilis, blanditiis perferendis pariatur iusto ullam hic. Inventore numquam voluptate dolor dolorem, quisquam labore officia omnis maxime rem, quod unde minus, illum sit.
+                     Aliquid, tempore! Praesentium, doloribus! Assumenda quisquam tempore reprehenderit doloribus rem laudantium! Minima quo optio quaerat odio tenetur explicabo fuga maxime quas praesentium vitae quidem eius maiores, atque nulla culpa? Magni.
+                     Nobis asperiores amet minus expedita officiis itaque sed pariatur, soluta ut autem at distinctio ducimus quis ratione, assumenda magni! Ipsum repellat voluptatibus sed reiciendis ratione similique deserunt tempora, et repudiandae.
+                     Quae, magni? Maxime, sapiente velit, corrupti asperiores illo delectus dolorem molestiae minus, magni quos similique cupiditate perspiciatis sit animi? Porro autem reiciendis rem ipsa maxime? Corrupti ullam accusamus iusto. Non.
+                     Sit accusantium obcaecati eius beatae voluptates ipsum, voluptatem mollitia vero quo sed dolore perferendis tempore maxime debitis fugit quam iste, nihil facere esse officia praesentium laboriosam molestiae! Perspiciatis, at provident?
+                     Minima quidem odio quasi. Magni quo consectetur nam esse dolor nisi facilis cum incidunt, molestias possimus voluptatibus corrupti. Repellendus harum ipsa fuga sed rem impedit ab, aliquid ipsam nostrum excepturi.
+                     Ipsum fugit minus veritatis omnis unde soluta temporibus minima id. Quisquam reprehenderit laboriosam provident esse totam accusantium? Deserunt nihil amet esse nobis nam laudantium, magnam recusandae ex voluptate quod! Nam!
+                     Qui, beatae nihil quas sunt unde culpa libero molestias neque sapiente cum magni maiores voluptas, doloribus at dicta consectetur rem commodi vel iste nobis suscipit. Exercitationem nemo maxime magni modi?
+                     Magni ipsum velit architecto rem deserunt nesciunt saepe est, nemo recusandae iure excepturi, dicta ipsam dolorum dolores quis blanditiis quos sapiente pariatur vel. Aliquid dolore corrupti a autem quos amet.
+                     Modi debitis reprehenderit voluptas impedit, maiores nesciunt reiciendis in cum sunt enim ut quasi. Neque, voluptatibus repellat assumenda labore enim saepe perspiciatis dicta eligendi quas, earum eum! Mollitia, corporis exercitationem.
+                     Voluptate assumenda blanditiis dolores veniam optio, at, eum sequi unde voluptatem nobis earum quos corporis odio autem modi! Dignissimos, cum. Aperiam ratione ullam nobis suscipit quae ut odio nulla non.
+                     Recusandae expedita eaque quibusdam. Expedita, sapiente consectetur deserunt similique quas ipsa consequuntur perferendis laborum, obcaecati quia praesentium. Nam totam ut praesentium soluta temporibus maxime placeat vero, illo, accusantium deserunt voluptates.
+                     Adipisci maxime, voluptatem dolores iure libero nihil ullam molestiae dignissimos iste numquam soluta exercitationem amet fugiat nesciunt vel, veritatis consequatur blanditiis voluptas porro possimus omnis, illum fuga quo. Odio, optio.
+                     Nobis libero ducimus ipsa illum earum expedita, beatae quae amet ullam nisi incidunt autem officia corrupti commodi neque! Dicta reiciendis quibusdam, exercitationem rem sit vero repudiandae dignissimos consequatur? Repellat, saepe!
+                     Eum optio cumque aliquid in eveniet eos repudiandae praesentium error veritatis perspiciatis aut rerum dolor dolores laudantium sequi reprehenderit nesciunt illum recusandae, corrupti quidem quo. Deserunt, voluptates consequatur. Maxime, quidem.
+                     Rerum ad numquam ipsum placeat rem et aspernatur voluptas explicabo maxime, non tenetur veritatis animi natus pariatur dolorem nostrum nemo similique ullam accusamus. Illo nihil iste, libero iure culpa esse?
+                     Sapiente perferendis quasi dicta in, consequatur quia possimus dolorum sed consequuntur? Numquam incidunt accusamus veritatis culpa fugit impedit nostrum, eos similique ullam architecto optio ad hic quibusdam nemo quam molestiae.
+                     Ad ratione possimus deleniti, laborum, iure sunt nulla omnis distinctio incidunt hic id totam sed nesciunt sapiente beatae, illum velit explicabo? Facere modi quisquam, officiis quos ducimus repellat ullam magnam?
+                     Vel, repellat sit ipsam iusto tempora eaque, esse facilis pariatur dicta temporibus beatae. Iusto ipsa iste error pariatur officiis, delectus unde repudiandae illo temporibus architecto. Quis, maxime. Sunt, aspernatur tenetur.
+                     Voluptatibus vitae cumque eaque quisquam vel recusandae nisi fuga assumenda, ut fugiat iure ratione, molestiae maxime aut nulla porro quis laboriosam commodi obcaecati, cum non delectus! Sit aut odio unde?
+                     Ad fugit explicabo aut totam quasi ea obcaecati suscipit, qui quaerat culpa amet mollitia nesciunt, tempora nulla. Animi ullam, amet obcaecati similique, provident mollitia iusto vitae et dolore doloribus alias.
+                     Iste, quisquam sequi praesentium minus quibusdam debitis rerum, odio corporis atque at ipsam accusantium, perspiciatis porro nesciunt est dolorum reprehenderit quas! Voluptas saepe distinctio, dolor blanditiis dolorum labore veniam quasi.
+                     Dicta quae dolore aut asperiores recusandae, repellendus doloribus aliquid voluptas totam, a suscipit sapiente corporis laudantium, quibusdam sunt sint eligendi eius nisi consectetur doloremque libero nobis. Ad, perferendis! Alias, quaerat?
+                     Reprehenderit optio quis esse est doloribus similique, explicabo, ab id perferendis voluptatum illo cum quia magnam ad soluta at maxime sequi ea exercitationem natus! Laudantium autem non at quos quisquam?
+                     Dolore accusamus cupiditate, obcaecati ad nemo velit neque fuga illum pariatur vel, minus corporis perferendis commodi deleniti, dicta cumque dolores? Quibusdam, odio! Quibusdam tempora sint nobis. Eligendi molestiae ducimus ut.
+                     Nulla consequatur, tenetur numquam est fugit temporibus eum magnam, vero tempore harum reiciendis dicta eius dolorem quam ut rem fuga sunt. Accusamus temporibus itaque repellendus voluptatibus eum exercitationem expedita ea!
+                     Rerum suscipit consequuntur quisquam nulla ipsam assumenda enim non minima velit blanditiis aliquid, mollitia fuga exercitationem sunt voluptatem doloribus cupiditate adipisci molestias placeat magni fugit. Culpa mollitia minus dignissimos quia.
+                     Blanditiis laboriosam eum ullam consequuntur ad fuga laborum sunt iure vero? Amet quod nisi animi neque nobis voluptatem, enim deserunt nam qui eaque, voluptate, esse doloremque quam minima commodi iure.
+                     Illo accusantium temporibus nostrum, doloribus facere eaque pariatur autem totam adipisci enim, aperiam eos iste? Labore consequatur quas error minus laudantium. Cum corrupti explicabo molestias placeat, perferendis doloribus nobis ipsa!
+                     Laudantium soluta in eaque dolores provident ut minima ipsam pariatur quibusdam, quia perspiciatis quo molestiae error quasi et illo asperiores voluptate vitae praesentium reiciendis quod adipisci dolorem. Nam, in et.
+                     Eveniet delectus cum exercitationem illum, laborum adipisci a, illo quaerat nulla fuga dignissimos vitae aperiam odit fugiat neque ab sint qui ad, officia maiores est? Consectetur eligendi blanditiis amet odio!
+                     Neque veritatis quas, ipsa ex minima ut officia labore dolorem totam saepe quos! Non possimus quisquam tempore, ratione nesciunt nemo eaque nihil dicta nostrum perferendis exercitationem commodi nisi quidem atque?
+                     Esse dolor ut nisi voluptas, architecto sed illum nulla cumque consequuntur accusantium iusto voluptate omnis dolorem facere cum similique libero aspernatur modi fuga itaque. Quos cumque molestias aspernatur aliquid id.
+                     Blanditiis, magni. Ut doloribus inventore quod pariatur! Assumenda sequi corrupti quas sit et ut cum blanditiis aperiam voluptatem expedita, at, velit minima alias facilis minus quod, neque dicta quaerat vero?
+                     Consequuntur, neque. Aspernatur enim dolor deserunt sequi atque, error at unde necessitatibus sint accusantium iste quidem officiis possimus, exercitationem odit aut culpa omnis dolorum quae. Beatae, provident modi. Rerum, autem.
+                     Deserunt quam, nesciunt in fuga repellendus vitae, inventore repellat ratione eius explicabo maiores culpa optio quia quo facilis pariatur architecto veritatis. Repellendus voluptate corporis alias praesentium ut hic culpa possimus.
+                     Ipsam maxime, commodi voluptas tenetur, incidunt nesciunt laudantium perspiciatis accusamus numquam qui doloremque eaque, repellat maiores mollitia exercitationem nisi? Et repellat labore hic quos fuga voluptate sit eum, illo quae!
+                     Assumenda similique libero, delectus quae error quam odit commodi distinctio explicabo consectetur iste veniam ipsa, beatae officiis necessitatibus, perspiciatis exercitationem! At esse odit dignissimos voluptas asperiores molestiae, sit ipsum sequi?
+                     In totam facilis autem obcaecati. Quo voluptatem, corporis earum unde perspiciatis magni excepturi dolore repellendus iste libero molestias eum tempora iusto, sequi, aut maxime repellat dignissimos obcaecati ab harum aliquid.
+                     Iste eius omnis ut laudantium doloribus animi incidunt voluptate in iusto repudiandae fugit nemo quaerat alias quasi molestiae facilis nulla, aspernatur inventore nesciunt velit perspiciatis expedita nisi qui. Corporis, animi?
+                     Libero animi quidem consequatur vero odio aliquam omnis accusantium. Assumenda dolor quaerat molestiae expedita dolore itaque esse ipsa nesciunt. Esse praesentium amet expedita placeat doloribus, ad nam optio temporibus facere?
+                     Quisquam necessitatibus illo aliquam consequuntur nemo sed non eum, doloremque vel earum, expedita amet! Molestias sit, quidem vel quis facilis distinctio aspernatur esse vitae voluptate sequi expedita quia ex ea.
+                     Id, odit soluta porro veritatis ipsa eos eligendi impedit quis quod, accusantium cupiditate saepe qui optio sit? Natus sapiente quod qui non repudiandae? Reiciendis sequi officiis, ut consequuntur incidunt soluta.
+                     Libero voluptatibus enim commodi, dolore quisquam adipisci deleniti repellat porro maxime iure ullam omnis facilis! Voluptatem earum consequuntur accusantium totam facilis dolore, corrupti sint modi in quam iste voluptates sit.
+                     Autem, commodi. Laboriosam deleniti iste, dignissimos officiis fugiat quos delectus dicta necessitatibus. Adipisci quo, accusamus ullam odio delectus veritatis! Ad odit necessitatibus et deleniti dolorum laborum molestias ullam possimus at.
+                     Doloribus corrupti aspernatur dolor eligendi eaque mollitia minus tenetur nihil. Molestiae deleniti dolore animi fugit necessitatibus mollitia quas officia totam perferendis quibusdam excepturi at, adipisci voluptatum illo error provident maiores.
+                     Doloribus itaque id iste asperiores suscipit cumque non? In iste nam blanditiis. Velit labore reprehenderit delectus inventore sunt illo culpa? Earum in, id nobis excepturi adipisci modi qui accusantium libero.
+                     Nemo libero eligendi eius sint aliquid optio quod aspernatur iure ipsam unde molestiae corporis delectus assumenda quos deserunt molestias veniam saepe asperiores, ducimus ut impedit quas, aut magni. Veritatis, asperiores.</p>
+                  </div>
+                  <!-- /.reviews-slider__item -->
+                  
+               </div>
+               <!-- /.swiper-slide -->
+               <div class="swiper-slide">
+                  <div class="reviews-slider__item">
+                     <div class="reviews-slider__profile">
+                        <img src="img/reviews/reviews-avatar.jpeg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                        <h3 class="reviews-slider__username">Megan Fox</h3>
+                        <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                        <div class="reviews-slider__rating">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                        </div>
+                        <!-- /.reviews-slider__rating -->
+                     </div>
+                     <!-- /.reviews-slider__profile -->
+                     <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They
+                        welcome us very well. Issue was only
+                        that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
+                        which
+                        were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good
+                        as per
+                        atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good.
+                        Overall it
+                        was a good experience and could recommend.</p>
+                  </div>
+                  <!-- /.reviews-slider__item -->
+               
+               </div>
+               <!-- /.swiper-slide -->
+               <div class="swiper-slide">
+                  <div class="reviews-slider__item">
+                     <div class="reviews-slider__profile">
+                        <img src="img/reviews/reviews-avatar.jpeg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                        <h3 class="reviews-slider__username">Megan Fox</h3>
+                        <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                        <div class="reviews-slider__rating">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="rating__img">
+                        </div>
+                        <!-- /.reviews-slider__rating -->
+                     </div>
+                     <!-- /.reviews-slider__profile -->
+                     <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They
+                        welcome us very well. Issue was only
+                        that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
+                        which
+                        were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good
+                        as per
+                        atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good.
+                        Overall it
+                        was a good experience and could recommend.</p>
+                  </div>
+                  <!-- /.reviews-slider__item -->
+               
+               </div>
+               <!-- /.swiper-slide -->
+            </div> 
+            <!-- /.swiper-wrapper -->
+            <button class="reviews-slider__button reviews-slider__button--prev"></button>
+            <button class="reviews-slider__button reviews-slider__button--next"></button>
+         </div>
+         <!-- /.swiper.reviews-slider -->
+      </div>
+      <!-- /.container -->
+   </div>
+   <!-- /.reviews -->
+
+   <!-- Слайдер -->
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
