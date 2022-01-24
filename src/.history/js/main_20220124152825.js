@@ -32,6 +32,6 @@ var reviewsSwiper = new Swiper('.reviews-slider', {
 
 });
 
-// parallax
-$('.parallax-window').parallax({ imageSrc: '../img/newsletter/newsletter-bg.jpeg' });
+
+
 

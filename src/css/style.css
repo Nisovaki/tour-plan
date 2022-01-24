@@ -859,11 +859,6 @@ img {
 .newsletter {
   position: relative;
   padding: 78px 0 67px 0;
-  background-image: url(../img/newsletter/newsletter-bg.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .newsletter:before {
@@ -951,6 +946,7 @@ img {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1400,6 +1396,9 @@ img {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 26px;
   }
 }
 
