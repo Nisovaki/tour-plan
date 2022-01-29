@@ -927,8 +927,7 @@ img {
 }
 
 .packges-card {
-  padding-top: 39px;
-  padding-left: 44px;
+  margin: 39px 20px 25px 44px;
 }
 
 .packges-card__subtitle {
@@ -1113,8 +1112,7 @@ img {
 }
 
 .packges-vertical__text {
-  margin-top: 26px;
-  margin-left: 32px;
+  margin: 26px 20px 25px 32px;
 }
 
 .packges-vertical__button {
@@ -1736,6 +1734,9 @@ img {
     -ms-grid-column-span: 1;
     grid-area: 3 / 2 / 4 / 3;
   }
+  .packges-card {
+    margin-bottom: 30px;
+  }
   .packges-card__text {
     width: 265px;
     font-size: 12px;
@@ -1858,18 +1859,24 @@ img {
     width: 100%;
   }
   .packges-wrapper {
-    -ms-grid-rows: (446px)[3];
-        grid-template-rows: repeat(3, 446px);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
   .packges-lateral__img {
-    width: 285px;
-    height: 446px;
+    width: 100%;
+    height: 100%;
   }
   .packges-lateral__button {
-    bottom: 22px;
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .packges-card {
-    padding-left: 37px;
+    justify-items: center;
+    margin-left: 37px;
   }
   .packges-card__subtitle {
     font-size: 16px;
@@ -1890,17 +1897,37 @@ img {
     font-size: 10px;
   }
   .packges-pseudo {
-    font-size: 13px;
+    font-size: 9px;
+    width: 100px;
   }
   .packges-sale {
-    font-size: 23px;
+    font-size: 18px;
+    line-height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
   }
   .packges-vertical__subtitle {
     font-size: 16px;
   }
+  .packges-vertical__text {
+    margin: 8% 7% 8% 8%;
+  }
+  .packges-vertical__button {
+    position: static;
+    margin-bottom: 3px;
+  }
   .packges-button {
     font-size: 9px;
     padding: 8px 22px;
+  }
+  .indent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .newsletter-wrapper {
     max-width: 576px;
@@ -1963,22 +1990,16 @@ img {
     font-size: 26px;
     margin-bottom: 50px;
   }
-  .packges-wrapper {
-    -ms-grid-rows: (400px)[3];
-        grid-template-rows: repeat(3, 400px);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-  }
-  .packges-lateral__img {
-    height: 400px;
+  .packges-lateral__proposal {
+    font-size: 10px;
+    width: 80px;
   }
   .packges-lateral__button {
     right: 15px;
     bottom: 15px;
   }
   .packges-card {
-    padding-left: 23px;
-    padding-top: 22px;
+    margin: 35px 16px 25px 15px;
   }
   .packges-card__subtitle {
     font-size: 16px;
@@ -2028,7 +2049,8 @@ img {
   }
   .packges-button {
     font-size: 7px;
-    padding: 5px 12px;
+    margin-top: 6px;
+    padding: 4px 12px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
@@ -2153,7 +2175,7 @@ img {
     padding: 6px 7px 6px 10px;
   }
   .packges-card {
-    padding-left: 30%;
+    margin: 9% 4% 9% 29%;
   }
   .packges-vertical--card-1 {
     -ms-grid-row: 2;
@@ -2192,9 +2214,6 @@ img {
   }
   .packges-vertical__img {
     width: 100%;
-  }
-  .packges-sale {
-    padding-bottom: 20px;
   }
   .packges-button {
     font-size: 10px;
