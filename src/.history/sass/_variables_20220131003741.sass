@@ -1,0 +1,32 @@
+$primary: #EC1F46
+$secondary: #F5FAFE
+$text-colors: #333333
+$dark: #0A223D
+$light: #ffffff
+$footer-text-color: #BDBDBD
+.footer
+      &-wrapper
+         grid-template-columns: repeat(6, 1fr)
+         grid-row-gap: 40px
+      &__logo
+         grid-row: 1 / 2
+         grid-column: span 2
+      &__social
+         &-network
+            grid-row: 1 / 2
+            grid-column: span 4
+            align-self: center
+      &__categories
+         grid-row: 2 / 3
+         grid-column: span 2
+      &__legal
+         grid-column: span 2
+      &__additional
+         grid-column: span 2
+      &__contact
+         &-details
+            grid-column: span 5
+            grid-row: 3
+         &-form
+            grid-row: 5
+            grid-column: span 3
