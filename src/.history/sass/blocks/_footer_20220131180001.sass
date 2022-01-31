@@ -1,0 +1,175 @@
+.footer
+  background-color: $dark
+  color: $light
+  padding-top: 108px
+  padding-bottom: 46px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-auto-rows: minmax(40px, min-content)
+    grid-gap: 20px
+    align-items: start
+  &__logo
+    width: 153px
+    grid-row: 1 / 3
+    align-self: stretch
+  &__categories
+    padding-left: 4px
+    grid-row: 1 / 4
+  &__additional
+    padding-left: 6px
+  &__social
+    &-network
+      display: flex
+      align-items: center
+      grid-row: 2 / 4
+      grid-column: span 2
+    &-links
+      display: flex
+      align-items: center
+      min-width: 83px
+      justify-content: space-between
+      margin-top: 4px
+  &__legal
+    padding-left: 6px
+  &__contact
+    &-details
+      grid-column: span 2
+      margin-top: 12px
+      margin-left: -3px
+    &-form
+      margin-left: 7px
+      grid-column: span 2
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+    &--pl-1
+      padding-left: 8px
+    &--pl-6
+      padding-left: 63px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin-top: 0
+    margin-bottom: 16px
+    text-transform: uppercase
+    &--inline
+      margin: 4px 44px 0 6px
+    &--mb-3
+      margin-bottom: 24px
+    &--mb-2
+      margin-bottom: 34px
+    &--pl-6
+      padding-left: 63px
+  &__item
+    display: flex
+    align-items: flex-start
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $footer-text-color
+    &--mb-2
+      margin-bottom: 17px
+    &--mb-1
+      margin-bottom: 24px
+    &--lh-1
+      line-height: 157%
+    &--lh-2
+      line-height: 99%
+  &__icon
+    &--mt-1
+      margin-left: -2px
+      margin-top: 7px
+    &-wrapper
+      min-width: 37px
+  &__tel
+    &-text
+      display: block
+  &__text
+    color: $footer-text-color
+    margin-bottom: 22px
+    font-size: 14px
+    line-height: 160%
+    margin-bottom: 26px
+  &__link
+    text-decoration: none
+    color: inherit
+    &--mt-1
+      margin-top: -3px
+  &__message
+    background-color: #fff
+    border-radius: 4px
+    border: none
+    padding: 18px 23px
+    flex-basis: 100%
+    margin-bottom: 23px
+    width: 539px
+    height: 123px
+    resize: none
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    font-style: normal
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    background-color: $primary
+    border: none
+    border-radius: 4px
+    cursor: pointer
+  &__info
+    font-style: normal
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    color: $info-color
+  &__input
+    background-color: #fff
+    border-radius: 4px
+    border: none
+    padding: 0 23px
+    height: 50px
+    margin-bottom: 15px
+    flex-basis: 47%
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &-give
+    padding-top: 102px
+    display: flex
+  &-offer
+    display: flex
+    justify-content: center
+    flex-basis: 88%
+    &__list
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin: 0
+      padding: 0
+      list-style: none
+    &__item
+      padding-right: 15px
+      &:last-child
+        padding-right: 0
+    &__link
+      text-decoration: none
+      color: inherit
+  &-bank
+    align-items: flex-end
