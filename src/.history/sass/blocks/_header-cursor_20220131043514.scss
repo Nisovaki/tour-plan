@@ -1,0 +1,17 @@
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+input::-webkit-input-autofocus       {padding-left: ;}
+input::-moz-autofocus                {padding-left: ;}
+input:-moz-autofocus                 {padding-left: ;}
+input:-ms-input-autofocus            {padding-left: ;}
+input:focus::-webkit-input-autofocus {padding-left: ;}
+input:focus::-moz-autofocus          {padding-left: ;}
+input:focus:-moz-autofocus           {padding-left: ;}
+input:focus:-ms-input-autofocus      {padding-left: ;}

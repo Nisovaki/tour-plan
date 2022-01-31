@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Подключение JS Api яндекс карты -->
+   <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=3b321349-20a3-44c7-84a7-686ab7601116&lang=ru_RU" type="text/javascript"></script>
+   <script src="js/map.js"></script> -->
+   <!-- Подключение favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="img/Favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/Favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/Favicon/favicon-16x16.png">
+   <link rel="manifest" href="img/Favicon/site.webmanifest">
+   <link rel="mask-icon" href="img/Favicon//safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   <!-- Шрифт Mulish + Nunito -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet">
+   <!-- Подключение слайдера -->
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+   <!-- Подключение паралакса -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="js/parallax.js"></script>
+   <!-- Подключение css -->
+   <link rel="stylesheet" href="css/style.css">
+   <title>Best tour plan - Hotel Booking</title>
+</head>
+<body>
+   <header class="navbar navbar--mobile_fixed">
+      <div class="container">
+         <div class="navbar-top">
+            <a href="https://oshcherbakova.ru/tour-plan/" class="logo">
+               <img src="img/header/horizontal-logo.svg" alt="Logo: Best tour plan" class="logo__image">
+            </a>
+
+            <form action="#" class="search navbar__search navbar__search--mobile_hidden">
+               <input type="text" class="search__input" placeholder="Search Location" autofocus>
+               <button class="search__button">
+                  <img src="img/header/search.svg" alt="Icon: search" class="search__img">
+               </button>
+            </form>
+
+            <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+               <img src="img/header/user-avatar.jfif" alt="avatar: Nathan" class="user__avatar">
+               <span class="user__name">Nathan</span>
+            </a>
+
+            <button class="menu-button  navbar-top__menu-button">
+               <span class="menu-button__line"></span>
+               <span class="menu-button__line"></span>
+               <span class="menu-button__line"></span>
+            </button>
+         </div>
+         <!-- /.header-top -->
+      </div>
+      <!-- /.container -->
+      <div class="navbar-bottom">
+         <div class="container">
+            <nav class="navbar-menu">
+               <ul class="navbar-menu__list">
+                  <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                     <a href="#" class="user navbar__user navbar__user--mobile_visible">
+                        <img src="img/header/user-avatar.jfif" alt="avatar: Nathan" class="user__avatar">
+                        <span class="user__name navbar__user-name">Nathan</span>
+                     </a>
+                  </li>
+
+                  <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                     <form action="#" class="search navbar__search navbar__search--mobile_visible">
+                        <input type="text" class="search__input" placeholder="Search Location">
+                        <button class="search__button">
+                           <img src="img/header/search.svg" alt="Icon: search" class="search__img">
+                        </button>
+                     </form>
+                  </li>
+
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">All Deals</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Hotels</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Activities</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Restaurants</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Events</a>
+                  </li>
+            
+                  <li class="navbar-menu__item">
+                     <a href="#" class="navbar-menu__link">Rodrigues</a>
+                  </li>
+               </ul>
+            </nav>
+            <!-- /.navbar-menu -->
+         </div>
+         <!-- /.container -->
+      </div>
+      <!-- /.navbar-bottom -->
+   </header>
+   <!-- /.header -->
+   <nav class="breadcrumb">
+      <div class="container">
+         <ul class="breadcrumb-list">
+            <li class="breadcrumb-list__item">
+               <a href="#" class="breadcrumb-list__link">Home</a>
+            </li>
+
+            <li class="breadcrumb-list__item">
+               <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+            </li>
+
+            <li class="breadcrumb-list__item">
+               Grand Hilton Hotel
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- /.breadcrumb -->
+   <section class="hotel">
+      <div class="container">
+         <div class="hotel-info">
+            <div class="hotel-info__text">
+               <div class="hotel-wrapper">
+                  <div class="stars">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="stars__img">
+                  </div>
+                  <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
+                  <span class="offer hotel-info__offer">Flash Offer</span>
+                  <p class="hotel-description hotel-info__description">Half-Board<span class="hotel-description__space">&nbsp;</span>/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+               </div>
+            </div>
+            <!-- /.hotel-info__text -->
+            <div class="rating hotel-info__rating">
+               <span class="rating__text">User Rattings</span>
+               <span class="rating__counter">4.5/<span class="rating__counter-sub">5</span></span>
+            </div>
+            <!-- /.hotel-info__rating -->
+         </div>
+         <!-- /.hotel-info -->
+         <div class="hotel-grid">
+            <div class="slider hotel__slider">
+               <!-- Slider main container -->
+               <div class="swiper hotel-swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                     <!-- Slides -->
+                     <div class="swiper-slide swiper-slide--gradient">
+                        <img class="swiper-slide__image" src="img/hotel/slider.jpg" alt="slide">
+                     </div>
+                     <div class="swiper-slide swiper-slide--gradient">
+                        <img class="swiper-slide__image" src="img/hotel/slider-2.jpg" alt="slide">
+                     </div>
+                     <div class="swiper-slide swiper-slide--gradient">
+                        <img class="swiper-slide__image" src="img/hotel/slider-3.jpg" alt="slide">
+                     </div>
+                     <div class="swiper-slide swiper-slide--gradient">
+                        <img class="swiper-slide__image" src="img/hotel/slider-4.jpg" alt="slide">
+                     </div>
+                     <div class="swiper-slide swiper-slide--gradient">
+                        <img class="swiper-slide__image" src="img/hotel/slider-5.jpg" alt="slide">
+                     </div>
+                  </div>               
+                  <!-- If we need navigation buttons -->
+                  <button class="hotel-swiper__button hotel-swiper__button--prev"></button>
+                  <button class="hotel-swiper__button hotel-swiper__button--next"></button>
+               </div>
+               <!-- /swiper-container -->
+            </div>
+            <!-- /slider -->
+            <div class="hotel-right">
+               <div class="booking">
+                  <div class="booking__info">
+                     <div class="booking__price">
+                        <span class="booking__start">price starts as</span>
+                        <strong class="booking__pricetag">$ 8,500</strong>
+                        <span class="booking__per-room">per room / night</span>
+                     </div>
+                     <!-- /booking__price -->
+                     <div class="booking-room">
+                        <div class="booking__text">
+                           <img src="img/hotel/user.svg" alt="Icon: user" class="booking__icon-user">
+                           <span class="booking__description">2 x Guests</span>
+                        </div>
+               
+                        <div class="booking__text">
+                           <img src="img/hotel/home.svg" alt="Icon: home" class="booking__icon-home">
+                           <span class="booking__description">1 x Room</span>
+                        </div>
+                     </div>
+                     <!-- /.persone-room -->
+                  </div>
+                  <!-- /.booking-info -->
+                  <div class="booking__call-center">
+                     <span class="booking__heading">Quick Booking</span>
+                     <a href="tel:12100" class="booking__number">
+                        <img src="img/hotel/phone-call.svg" alt="Icon: phone" class="booking__image-phone">
+                        <span class="booking__num">12100</span></a>
+                  </div>
+                  <!-- /booking__call-center -->
+                  <button class="button booking__button">View Other Options</button>
+               </div>
+               <!-- /.booking -->
+               <!-- <div class="map-cart" id="map"></div> -->
+
+               <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48796.631357628874!2d26.406101527042523!3d40.14697330954294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b1a9cf23f5434b%3A0x7f21b1425645b6e!2sKULE%20HOTEL!5e0!3m2!1sru!2sru!4v1642716948704!5m2!1sru!2sru"  class="map-cart" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+               
+               <!-- /.map-cart -->
+            </div>
+            <!-- /.hotel-right -->
+         </div>
+         <!-- /hotel-grid -->
+      </div>
+      <!-- /.container -->
+   </section>
+   <!-- /.hotel -->
+
+   <section class="packges">
+      <div class="container">
+         <h2 class="packges__title">Other Packages</h2>
+         <div class="packges-wrapper">
+            <div class="packges-lateral">
+               <div class="packges-lateral__proposal">Flash Offer</div>
+               <img src="img/packges/packges-img_1.jpg" alt="packges-img" class="packges-lateral__img">
+               <div class="packges-card">
+                  <div class="packges-stars">
+                     <img src="img/hotel/Star.svg" alt="star" class="packges-stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="packges-stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="packges-stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="packges-stars__img">
+                     <img src="img/hotel/Star.svg" alt="star" class="packges-stars__img">
+                  </div>
+   
+                  <h3 class="packges-card__subtitle">Hotel Blue Haven</h3>
+   
+                  <p class="packges-card__text">Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim
+                     laborum magna llit.
+                     Ipsum est fugiat velit ea
+                     llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat
+                     eiusmod
+                     nsectetur enim
+                     laborum magna mollit. Ipsum est fugiat velit ea ullamco do</p>
+   
+                  <div class="packges-cell packges-cell--indent">
+                     <div class="packges-cell__adress">
+                        <img src="img/packges/map.svg" alt="Icon: Adress"
+                           class="packges-cell__img packges-cell__img--indent">
+                        1749 Wheeler Ridge Delaware
+                     </div>
+   
+                     <div class="packges-cell__user">
+                        <img src="img/hotel/user.svg" alt="Icon: user" class="packges-cell__img packges-cell__img--indent">
+                        2 x Guests
+                     </div>
+   
+                     <div class="packges-cell__home">
+                        <img src="img/hotel/home.svg" alt="Icon: Home" class="packges-cell__img packges-cell__img--indent">
+                        1 x Room
+                     </div>
+                  </div>
+                  <!-- /.packges-cel -->
+                  <div class="packges-pseudo packges-pseudo--indent">$ 10,500</div>
+                  <div class="indent">
+                     <div class="packges-sale packges-sale--indent">$ 8,500</div>
+                     <button class="packges-button packges-lateral__button">Book Now</button>
+                  </div>
+                  
+               </div>
+               <!-- /.packges-card -->
+            </div>
+            <!-- /.packges-lateral -->
+            <div class="packges-vertical packges-vertical--card-1">
+               <div class="packges-vertical__proposal">Flash Offer</div>
+               <img src="img/packges/packges-img_2.jpg" alt="packges-img" class="packges-vertical__img">
+               <div class="packges-vertical__text">
+                  <h3 class="packges-vertical__subtitle">LUX* Belle Mare</h3>
+                  <div class="packges-cell">
+                     <div class="packges-cell__adress">
+                        <img src="img/packges/map.svg" alt="Icon: Adress" class="packges-cell__img">
+                        1749 Wheeler Ridge Delaware
+                     </div>
+   
+                     <div class="packges-cell__user">
+                        <img src="img/hotel/user.svg" alt="Icon: user" class="packges-cell__img">
+                        2 x Guests
+                     </div>
+   
+                     <div class="packges-cell__home">
+                        <img src="img/hotel/home.svg" alt="Icon: Home" class="packges-cell__img">
+                        1 x Room
+                     </div>
+                  </div>
+                  <!-- /.packges-cell -->
+                  <div class="packges-pseudo">$ 8,500</div>
+                  <div class="indent">
+                     <div class="packges-sale">$ 3,000</div>
+                     <button class="packges-button packges-vertical__button">Book Now</button>
+                  </div>
+               </div>
+               <!-- /.packges-vertical__text -->
+            </div>
+            <!-- /.packges-vertical -->
+            <div class="packges-vertical packges-vertical--card-2">
+               <div class="packges-vertical__proposal">Flash Offer</div>
+               <img src="img/packges/packges-img_3.jpg" alt="packges-img" class="packges-vertical__img">
+               <div class="packges-vertical__text">
+                  <h3 class="packges-vertical__subtitle">White Palace</h3>
+                  <div class="packges-cell">
+                     <div class="packges-cell__adress">
+                        <img src="img/packges/map.svg" alt="Icon: Adress" class="packges-cell__img">
+                        1749 Wheeler Ridge Delaware
+                     </div>
+   
+                     <div class="packges-cell__user">
+                        <img src="img/hotel/user.svg" alt="Icon: user" class="packges-cell__img">
+                        2 x Guests
+                     </div>
+   
+                     <div class="packges-cell__home">
+                        <img src="img/hotel/home.svg" alt="Icon: Home" class="packges-cell__img">
+                        1 x Room
+                     </div>
+                     <!-- /.packges-cell -->
+                  </div>
+                  <div class="packges-pseudo">$ 10,500</div>
+                  <div class="indent">
+                     <div class="packges-sale">$ 9,500</div>
+                     <button class="packges-button packges-vertical__button">Book Now</button>
+                  </div>
+               </div>
+               <!-- /.packges-vertical__text -->
+            </div>
+            <!-- /.packges-vertical -->
+            <div class="packges-vertical packges-vertical--card-3">
+               <div class="packges-vertical__proposal">Flash Offer</div>
+               <img src="img/packges/packges-img_4.jpg" alt="packges-img" class="packges-vertical__img">
+               <div class="packges-vertical__text">
+                  <h3 class="packges-vertical__subtitle">Luxury Place</h3>
+                  <div class="packges-cell">
+                     <div class="packges-cell__adress">
+                        <img src="img/packges/map.svg" alt="Icon: Adress" class="packges-cell__img">
+                        1749 Wheeler Ridge Delaware
+                     </div>
+   
+                     <div class="packges-cell__user">
+                        <img src="img/hotel/user.svg" alt="Icon: user" class="packges-cell__img">
+                        2 x Guests
+                     </div>
+   
+                     <div class="packges-cell__home">
+                        <img src="img/hotel/home.svg" alt="Icon: Home" class="packges-cell__img">
+                        1 x Room
+                     </div>
+                  </div>
+                  <!-- /.packges-cell -->
+                  <div class="packges-pseudo">$ 4,500</div>
+                  <div class="indent">
+                     <div class="packges-sale">$ 2,500</div>
+                     <button class="packges-button packges-vertical__button">Book Now</button>
+                  </div>
+               </div>
+               <!-- /.packges-vertical__text -->
+            </div>
+            <!-- /.packges-vertical -->
+            <div class="packges-vertical packges-vertical--card-4">
+               <div class="packges-vertical__proposal">Flash Offer</div>
+               <img src="img/packges/packges-img_5.jpg" alt="packges-img" class="packges-vertical__img">
+               <div class="packges-vertical__text">
+                  <h3 class="packges-vertical__subtitle">Hotel Five Star</h3>
+                  <div class="packges-cell">
+                     <div class="packges-cell__adress">
+                        <img src="img/packges/map.svg" alt="Icon: Adress" class="packges-cell__img">
+                        1749 Wheeler Ridge Delaware
+                     </div>
+   
+                     <div class="packges-cell__user">
+                        <img src="img/hotel/user.svg" alt="Icon: user" class="packges-cell__img">
+                        2 x Guests
+                     </div>
+   
+                     <div class="packges-cell__home">
+                        <img src="img/hotel/home.svg" alt="Icon: Home" class="packges-cell__img">
+                        1 x Room
+                     </div>
+                  </div>
+                  <!-- /.packges-cell -->
+                  <div class="packges-pseudo">$ 6,500</div>
+                  <div class="indent">
+                     <div class="packges-sale">$ 3,500</div>
+                     <button class="packges-button packges-vertical__button">Book Now</button>
+                  </div>
+               </div>
+               <!-- /.packges-vertical__text -->
+            </div>
+            <!-- /.packges-vertical -->
+         </div>
+         <!--/.packges-wrapper -->
+      </div>
+      <!-- /.container -->
+   </section>
+   <!-- /.packges -->
+
+   <section class="newsletter parallax-window">
+      <div class="newsletter-wrapper">
+         <h2 class="newsletter-title newsletter__title">
+            subscribe to our
+            <span class="newsletter-title__strong">Newsletter</span>
+         </h2>
+
+         <form action="#" class="subscribe newsletter__subscribe">
+            <input type="text" class="subscribe__input" placeholder="Your email address">
+            <button class="subscribe__button">Send</button>
+         </form>
+      </div>
+   </section>
+   <!-- /.newsletter -->
+
+   <section class="reviews">
+      <div class="container">
+         <h2 class="reviews__title">What people think about us</h2>
+         <!-- Slider -->
+         <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="reviews-slider__item">
+                     <div class="reviews-slider__profile">
+                        <img src="img/reviews/reviews-avatar.jpeg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                        <h3 class="reviews-slider__username">Megan Fox</h3>
+                        <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                        <div class="reviews-slider__rating">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                        </div>
+                        <!-- /.reviews-slider__rating -->
+                     </div>
+                     <!-- /.reviews-slider__profile -->
+                     <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They
+                        welcome us very well. Issue was only
+                        that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery
+                        which
+                        were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good
+                        as per
+                        atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good.
+                        Overall it
+                        was a good experience and could recommend.
+                     
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis laudantium voluptas incidunt quidem. Voluptatem ducimus accusamus aliquid, accusantium illum debitis laborum molestias tempore! Est voluptatem consectetur odit voluptate vitae eveniet.
+                        Iure sint consectetur laboriosam, sit, inventore atque sapiente exercitationem quam sequi iste reiciendis quaerat, explicabo soluta quas odio laborum eos. Excepturi repellat sint laborum sequi cum tenetur sit quasi cumque.
+                        Eligendi, iure impedit magni provident delectus dolor et fugit aspernatur cupiditate repellat laudantium sapiente beatae veritatis numquam corrupti maxime rem tenetur nihil id consectetur vitae! Quibusdam labore officiis ipsum eius.
+                        Odio, sapiente inventore quaerat, voluptatum non iste fuga incidunt laborum eligendi adipisci saepe ex. Eum, commodi! Ab inventore consequuntur laborum sapiente iste id dolorum vero autem pariatur. Accusantium, enim corrupti!
+                        Nemo consectetur aperiam id, a eligendi numquam doloremque reiciendis voluptatum vitae, et aliquid nobis, unde placeat deserunt beatae impedit optio quod totam sequi sed architecto dolorem. Doloribus illum asperiores architecto?
+                        Distinctio aspernatur temporibus porro at iste architecto fuga, in vero velit alias aliquid odit cumque, debitis ducimus! Tempore tenetur deleniti recusandae, pariatur provident ipsa amet harum qui, ut corporis accusantium!
+                        Consequuntur officia vero quaerat maxime sint corrupti voluptatibus, adipisci provident harum obcaecati placeat aspernatur et. Minima consequuntur ducimus nisi ea ut et quas facilis ipsa, exercitationem quod dolorem rem sunt!
+                        Deserunt libero ullam voluptas placeat dolore asperiores ipsa, ratione corporis id optio nam, quasi impedit unde ducimus aspernatur, autem eaque temporibus nemo quos! Cupiditate veritatis eligendi veniam eaque itaque necessitatibus!
+                        Incidunt, expedita tempora sequi consequatur soluta mollitia atque aut fugiat debitis at quis nulla modi officia fugit placeat dolor! Doloremque ea dicta aliquam praesentium maiores dolores tempore, laborum eum obcaecati.
+                        Dolorem, nostrum! Assumenda natus illum sit voluptates dolorem, vero ducimus impedit cum earum accusantium corporis aut minima nulla doloribus voluptatem commodi quibusdam culpa. Voluptatem maxime nam provident doloribus repudiandae dolores?
+                        Laborum voluptas animi nulla fugit impedit facere maxime iusto adipisci consectetur? Repellendus dolores natus molestiae voluptas accusantium excepturi deleniti nostrum ab nulla. Eos assumenda nesciunt praesentium. Iusto cumque aut ad.
+                        Iure beatae blanditiis aliquam! Consectetur illo deleniti doloremque excepturi tempora cum error adipisci. Sit natus nisi distinctio repellat fuga maiores cum sint saepe illo iure doloribus, voluptas molestias provident doloremque.
+                        A nemo praesentium commodi ea odit iusto sit officia numquam. Eligendi quo dolorum deserunt optio similique aliquam praesentium, quasi maiores necessitatibus ut, veniam ullam minima inventore at ipsum amet libero.
+                        Iure, quaerat? Voluptatum impedit magnam commodi et fuga mollitia, qui quos cum tempora voluptatem dolorum accusamus consequatur sint dignissimos expedita nesciunt deleniti facere, placeat vitae. Possimus beatae sint ducimus earum.
+                        Facilis quas doloremque perspiciatis minima. Officiis rem ut ad voluptas expedita itaque fuga accusantium impedit, unde cumque, eum veritatis quibusdam sequi magni alias a. Eius doloribus et blanditiis vero saepe.
+                        Alias architecto laudantium assumenda magnam corrupti odio eos aspernatur animi tenetur molestias excepturi, doloribus, commodi accusantium quas fuga qui, repudiandae temporibus rem officiis. Id numquam consequuntur voluptatum laboriosam nisi explicabo!
+                        Quae veniam nam dolorum doloremque nulla eius quidem accusantium, voluptas blanditiis in dignissimos pariatur molestias necessitatibus quaerat! Praesentium maiores nemo est, ab deleniti quia qui officiis. Dicta voluptatem harum amet.
+                        Fugit commodi doloribus maiores adipisci vel iusto. Necessitatibus quidem fugit quis at distinctio, autem molestias cum quod suscipit ducimus asperiores sapiente voluptatem qui, eius repellendus quam aperiam, soluta deserunt. Incidunt.
+                        Repellendus aut voluptate exercitationem quia! Alias tenetur repellat ipsa adipisci praesentium blanditiis, dolores magni modi iste labore, voluptatum in ad obcaecati dignissimos iusto dolorem, accusantium veniam. Culpa laudantium distinctio impedit?
+                        Eveniet obcaecati neque id dolor commodi quis, rem perspiciatis amet explicabo, aspernatur in quae quibusdam tempora? Voluptatibus, voluptas! Error doloribus aut quasi nam illum eveniet temporibus alias modi eos accusantium.
+                        Fugiat non consequatur voluptas, deleniti neque perspiciatis. Quo voluptates, aliquam reiciendis at nulla delectus quisquam expedita laboriosam, quam ipsam repellendus cumque. Consequatur deserunt assumenda, ullam sapiente temporibus provident repellendus ipsam.
+                        Quasi enim ratione unde officiis, ullam, possimus laboriosam esse, obcaecati quo eveniet perspiciatis! Aliquid iusto vero veniam iure dolor recusandae sequi error quasi, in obcaecati sapiente quod delectus officiis tenetur?
+                        Nam magni, adipisci quia eos dignissimos maiores? Officiis ab dolor provident doloremque non, voluptates, nam, laboriosam culpa earum quidem molestias quis reiciendis incidunt deleniti. Omnis porro quibusdam praesentium delectus error.
+                        Omnis optio dolore ratione sint neque veritatis hic! Quam quae quis facilis, sapiente quia nobis nemo reprehenderit reiciendis a adipisci maiores esse itaque eveniet, sunt ad velit. Cumque, culpa voluptas!
+                        Deleniti repellendus ullam quaerat sequi aut at, laboriosam harum recusandae quia, quidem est. Sint unde distinctio necessitatibus rem perspiciatis illo, facilis quos at ad, officia tempore animi voluptate vero hic.
+                        Consequatur natus vero totam quidem illo eius esse possimus nihil cumque est! Unde veritatis explicabo ullam veniam doloribus sequi quibusdam rerum magnam, quam nobis. Ullam iure perspiciatis id voluptatum quasi?
+                        Maiores debitis quas consectetur pariatur voluptas et fuga tempore non esse accusamus, dolores explicabo exercitationem neque facere veritatis soluta accusantium! Repellat quaerat atque totam quam reiciendis? Quas nostrum dolorem similique?
+                        Deserunt pariatur consequatur vitae amet. Ex tenetur quasi praesentium incidunt ea autem omnis porro, recusandae, saepe expedita illo fuga assumenda eligendi blanditiis, molestias perspiciatis? Ratione ab perferendis animi ullam doloremque?
+                        In eligendi quo, accusamus nam ad ipsam voluptatem eos distinctio dolore quis eum fuga ut molestias corrupti quisquam suscipit voluptates doloribus quia aliquid aut sint asperiores. Accusamus perferendis rem ducimus?
+                        Officia accusantium blanditiis suscipit quia adipisci architecto sed cum. Fuga possimus sunt reiciendis facilis quaerat architecto, excepturi mollitia. Ullam aperiam nemo animi natus, ipsum sit dolore magni eveniet unde obcaecati.
+                        Tempora temporibus, porro quibusdam reiciendis qui optio dicta. Provident aspernatur vero maxime totam, omnis neque? Incidunt error culpa a minus. Labore officia sequi veritatis, dolor tempora natus dolores voluptatibus hic.
+                        Non doloribus repellat, quisquam sed facilis odio nobis laborum mollitia repellendus dolor nihil vel reiciendis, tempora consequuntur provident, voluptatem dignissimos eligendi hic laboriosam nostrum saepe deleniti explicabo. Impedit, quam temporibus?
+                        Nesciunt quaerat quam error similique nemo, laudantium eaque dolorem labore, atque a harum, minus debitis velit quibusdam dicta et totam. Molestias, at? Molestias dicta facere explicabo sequi cupiditate incidunt alias!
+                        Iusto, dolorum incidunt ab esse explicabo animi similique assumenda numquam doloribus autem alias eum hic officiis ea repellat. Optio, vel voluptates inventore delectus quia neque nostrum ut possimus pariatur adipisci!
+                        Rem ut minus, odio nihil, minima perspiciatis blanditiis adipisci dolorum earum ad laborum. Aliquid tempora quibusdam non tenetur saepe porro exercitationem fuga ullam animi provident aspernatur, voluptas, iste earum quas!
+                        Possimus reiciendis commodi tempore dolore harum ipsum qui, fugit, dolores modi porro saepe aperiam distinctio! Sit suscipit vitae ea deleniti ipsum iusto voluptatem magni omnis quae architecto, saepe qui voluptas.
+                        Ipsa blanditiis veniam atque nihil dolorem quas numquam, expedita odio perferendis mollitia. Quidem facilis vel labore quaerat deleniti ipsa voluptatum cum saepe reiciendis eveniet? Vitae placeat a distinctio hic pariatur!
+                        Doloribus repudiandae error enim nisi ducimus! Culpa repudiandae aliquid dolores blanditiis voluptate officia soluta ad amet, et explicabo nisi incidunt, vero sequi distinctio pariatur hic natus non esse unde cum?
+                        Minima sit adipisci incidunt! Doloremque cumque, enim, hic optio asperiores neque, maxime officia veritatis impedit vel error ipsa consequuntur aspernatur temporibus quaerat dolorum dolores quasi? Suscipit nesciunt nihil accusantium facere?
+                        Laboriosam earum quisquam nostrum tempore totam, voluptatum aperiam harum magni ipsa ipsum temporibus animi exercitationem incidunt pariatur quaerat praesentium corporis, explicabo perferendis vero rerum placeat illum maiores. Accusamus, ut maxime?
+                        Dignissimos corporis ab perspiciatis laboriosam, quia ducimus facilis cumque ut dolore delectus debitis, hic iste magni doloremque tenetur rem! Eligendi ipsam voluptas quibusdam modi explicabo praesentium porro nesciunt ratione obcaecati!
+                        Quidem quod nam id aut, quibusdam dignissimos? Corporis magnam assumenda tenetur optio recusandae veritatis ea totam laborum dolorum! Distinctio maiores reiciendis veritatis nam voluptate aspernatur ratione enim pariatur illum fuga.
+                        Eum iste quaerat tempora consectetur, nemo quam. Numquam illum quasi nobis, expedita, sequi alias quia possimus quam inventore sit, blanditiis sed iusto vitae quaerat repellat corrupti assumenda autem in suscipit.
+                        Maiores nihil beatae nobis nesciunt aliquid obcaecati, porro deleniti laboriosam quaerat soluta, doloribus, cum totam sint atque pariatur veritatis voluptatum hic corrupti earum sunt harum officiis temporibus expedita. Illo, facere?
+                        Tempore, debitis. Ex, nam voluptatem maxime earum eius quae maiores voluptatum laboriosam id explicabo expedita eum beatae numquam enim nihil iusto vero voluptate asperiores corporis natus consequuntur dolorem dolor doloremque.
+                        Dolorum recusandae accusantium numquam sapiente earum sunt, id beatae eos officiis minus eum vero dolorem. Sit laudantium aliquam excepturi magnam. Corporis eveniet nihil tenetur rerum facere amet quod nemo magnam?
+                        Minus nemo, explicabo iure recusandae vel cum facere iusto deserunt neque aspernatur eaque! Provident optio molestias placeat culpa? Suscipit temporibus ducimus sint placeat laudantium consequatur dignissimos sequi cum nemo ab.
+                        Debitis exercitationem, necessitatibus dolores fugit explicabo labore recusandae eligendi, quia doloremque officia dolor magni. Impedit magni molestias earum pariatur ipsam magnam dolore optio, nam quos, quia cupiditate animi? Reprehenderit, optio.
+                        Nemo quam autem doloremque, eius unde aspernatur officiis quas fugit, quisquam illum dolores labore aliquid. Ex, nisi illum voluptatum at consequatur praesentium ad earum, non sit, repudiandae officiis cumque tempora!
+                        Quos repellat, suscipit dicta provident deleniti facilis debitis doloremque fugit nostrum dolore, numquam magnam enim minima impedit fugiat sed velit! Ea, molestias beatae doloremque non molestiae necessitatibus! Sapiente, unde reiciendis.
+                     </p>
+                  </div>
+                  <!-- /.reviews-slider__item -->
+               </div> 
+               <!-- /.swiper-slide -->
+               
+               <div class="swiper-slide">
+                  <div class="reviews-slider__item">
+                     <div class="reviews-slider__profile">
+                        <img src="img/reviews/reviews-avatar-2.jpeg" alt="Photo: Kristina Skoftok" class="reviews-slider__avatar">
+                        <h3 class="reviews-slider__username">Kristina Skoftok</h3>
+                        <span class="reviews-slider__date">Stayed 20 Nov, 2019</span>
+                        <div class="reviews-slider__rating">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                        </div>
+                        <!-- /.reviews-slider__rating -->
+                     </div>
+                     <!-- /.reviews-slider__profile -->
+                     <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aliquam delectus 
+                     nesciunt impedit tempora accusantium dolores maxime repellat natus. Quos cumque veritatis soluta ex dolores voluptatibus 
+                     perspiciatis veniam vero eligendi cupiditate illo placeat, debitis ipsa minima delectus. Veritatis, ab iure? Accusamus, 
+                     ex quisquam. Eaque totam eligendi asperiores! Rem, libero deserunt.</p>
+                  </div>
+                  <!-- /.reviews-slider__item -->
+               </div>
+               <!-- /.swiper-slide -->
+               
+               <div class="swiper-slide">
+                  <div class="reviews-slider__item">
+                     <div class="reviews-slider__profile">
+                        <img src="img/reviews/reviews-avatar-3.jpeg" alt="Photo: Dariko Maisuradze" class="reviews-slider__avatar">
+                        <h3 class="reviews-slider__username">Dariko Maisuradze</h3>
+                        <span class="reviews-slider__date">Stayed 25 Nov, 2019</span>
+                        <div class="reviews-slider__rating">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                           <img src="img/hotel/Star.svg" alt="star" class="reviews-slider__img">
+                        </div>
+                        <!-- /.reviews-slider__rating -->
+                     </div>
+                     <!-- /.reviews-slider__profile -->
+                     <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quo delectus 
+                     ab veritatis et! Reprehenderit iure iste repellendus molestiae excepturi tempora et magnam impedit est dolore. 
+                     Adipisci officia eum, perferendis dolorem provident dolorum saepe fugiat nisi libero. Eveniet quam assumenda a 
+                     nam necessitatibus. Veritatis facilis dicta iure, esse a nihil quis id? Possimus minus quaerat, id facere fuga 
+                     nemo sit itaque soluta nostrum aperiam atque sunt ducimus distinctio numquam?</p>
+                  </div>
+                  <!-- /.reviews-slider__item -->
+               </div>
+               <!-- /.swiper-slide -->
+            </div> 
+            <!-- /.swiper-wrapper -->
+            <button class="reviews-slider__button reviews-slider__button--prev"></button>
+            <button class="reviews-slider__button reviews-slider__button--next"></button>
+         </div>
+         <!-- /.swiper.reviews-slider -->
+      </div>
+      <!-- /.container -->
+   </section>
+   <!-- /.reviews -->
+   
+   <section class="activities">
+      <div class="container">
+         <h2 class="activities__title">Other Activities</h2>
+         <div class="activities-wrapper">
+            <div class="card activities__card activities__card--space-1">
+               <img src="img/activities//activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
+               <h3 class="card__title card__title--space-1">The curious corner of chamarel</h3>
+               <button class="card__button">Book Now</button>
+            </div>
+            
+            <div class="card activities__card activities__card--space-2">
+               <img src="img/activities//activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
+               <h3 class="card__title card__title--space-2">Gymkhana club golf course</h3>
+               <button class="card__button">Book Now</button>
+            </div>
+            
+            <div class="card activities__card activities__card--space-3">
+               <img src="img/activities//activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+               <h3 class="card__title card__title--space-3">Tamarind falls hiking trip - full day</h3>
+               <button class="card__button">Book Now</button>
+            </div>
+            
+            <div class="card activities__card activities__card--space-4">
+               <img src="img/activities//activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
+               <h3 class="card__title card__title--space-4">The blue marine discovery quest</h3>
+               <button class="card__button">Book Now</button>
+            </div>
+            <!-- /.card -->
+         </div>
+         <!-- /.activities-wrapper -->
+      </div>
+      <!-- /.container -->
+   </section>
+   <!-- /.activities -->
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-wrapper">
+            <img src="img/footer/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+            <div class="footer__list footer__categories">
+               <h3 class="footer__title">All categories</h3>
+               <ul class="footer__ul">
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">All Deals</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">Hotels</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">Activities</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">Spa Packages</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">Hotel Day Packages</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">Restaurants</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">Fitness</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#" class="footer__link">Rodrigues</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.footer__list -->
+
+            <div class="footer__list footer__additional">
+               <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+               <ul class="footer__ul">
+                  <li class="footer__item">
+                     <a href="" class="footer__link">About Us</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="" class="footer__link">Contact Us</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="" class="footer__link">How does it work?</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="" class="footer__link">Frequently Asked Questions</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="" class="footer__link">Deals.mu loyalty program</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="" class="footer__link">Promote your Business on BTP</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.footer__list -->
+
+            <div class="footer__social-network ">
+               <h3 class="footer__title footer__title--inline">Social Network</h3>
+               <div class="footer__social-links">
+                  <a href="#" class="footer__link">
+                     <img src="img/footer/facebook.svg" alt="Icon: facebook">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="img/footer/youtybe.svg" alt="Icon: youtybe">
+                  </a>
+                  <a href="#" class="footer__link">
+                     <img src="img/footer/instagram.svg" alt="Icon: instagram">
+                  </a>
+               </div>
+            </div>
+            <!-- /.footer__social-network -->
+
+            <div class="footer__list footer__legal">
+               <h3 class="footer__title">LEGAL INFORMATION</h3>
+               <ul class="footer__ul">
+                  <li class="footer__item">
+                     <a href="" class="footer__link">Terms & Conditions</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="" class="footer__link">Disclaimer</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="" class="footer__link">Cancellation policy</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="" class="footer__link">Privacy</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.footer__list -->
+
+            <div class="footer__contact-details">
+               <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+               <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
+               <ul class="footer__ul">
+                  <li class="footer__item footer__item--mb-2">
+                     <div class="footer__icon-wrapper"><img src="img/footer/marker.svg" alt="Icon: marker" class="footer__icon"></div>
+                     9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+                  </li>
+                  <li class="footer__item footer__item--mb-2">
+                     <div class="footer__icon-wrapper"><img src="img/footer/phone-call.svg" alt="Icon: phone" class="footer__icon"></div>
+                     <div class="footer__tel">
+                        <span class="footer__tel-text">Tel (business hours) : <a href="tel:2691500" class="footer__link">269 1500</a></span> 
+                        <span class="footer__tel-text">Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 20:00 pm)</span> 
+                        <span class="footer__tel-text">Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a>(08:00 am – 14:00 pm)</span> 
+                     </div>
+                  </li>
+                  <li class="footer__item footer__item--mb-2">
+                     <div class="footer__icon-wrapper"><img src="img/footer/email.svg" alt="Icon: email" class="footer__icon"></div>
+                     <a href="mailto:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.footer__contact-details -->
+
+            <div class="footer__contact-form">
+               <h3 class="footer__title">Send us a message</h3>
+               <form action="#" class="footer__form">
+                  <input type="text" class="input footer__input" placeholder="Your Full Name*">
+                  <input type="text" class="input footer__input" placeholder="Phone Number*">
+                  <textarea cols="30" rows="10" class="message footer__message" placeholder="Message"></textarea>
+                  <button class="button footer__button" type="submit">Send</button>
+                  <span class="footer__info">* Required Fields</span>
+               </form>
+            </div>
+            <!-- /.footer__contact-form -->
+         </div>
+         <!-- /.footer-wrapper -->
+      </div>
+      <!-- /.container -->
+   </footer>
+   <!-- /.footer -->
+   
+   <!-- Слайдер -->
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+</html>

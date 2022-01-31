@@ -1,0 +1,8 @@
+input::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
+input::-moz-placeholder                {line-height: 20px;  transition: line-height 0.5s ease;}
+input:-moz-placeholder                 {line-height: 20px;  transition: line-height 0.5s ease;}
+input:-ms-input-placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
+input:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+input:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+input:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}

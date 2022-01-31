@@ -1,0 +1,10 @@
+
+
+input::-webkit-input-autofocus       {padding-left: 10px;}
+input::-moz-autofocus                {padding-left: 10px;}
+input:-moz-autofocus                 {padding-left: 10px;}
+input:-ms-input-autofocus            {padding-left: 10px;}
+input:focus::-webkit-input-autofocus {padding-left: 10px;}
+input:focus::-moz-autofocus          {padding-left: 10px;}
+input:focus:-moz-autofocus           {padding-left: 10px;}
+input:focus:-ms-input-autofocus      {padding-left: 10px;}
