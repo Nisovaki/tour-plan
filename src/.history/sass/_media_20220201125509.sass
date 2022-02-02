@@ -299,6 +299,7 @@
    body
     padding-top: 78px  
    .container
+      // max-width: 576px
       width: 92%
    .navbar
       &--mobile
@@ -322,7 +323,6 @@
             margin-top: 10px
       &-bottom
          display: none
-         overflow: scroll
          position: fixed
          top: 77px
          left: 0
@@ -632,7 +632,7 @@
          &__link
             line-height: 20px
       &-bottom
-         top: 69px
+         top: 71px
       &__search
          margin: 0
          margin-bottom: 23px
@@ -664,6 +664,8 @@
             display: none
       &-swiper
          width: 99%
+      &-right
+         min-height: 405px
    .offer
       padding: 3px 10px 4px 9px
    .stars
@@ -700,7 +702,8 @@
       &-lateral
          display: grid
          grid-template-columns: 100%
-         grid-template-rows: minmax(50%, 58%)
+         grid-template-rows: 50%
+         g
          grid-area: auto
          &__block-1
             grid-row: span 1
@@ -717,7 +720,7 @@
          grid-row: span 2
          grid-column: span 1
          justify-items: start
-         padding: 31% 20px 31px 26px
+         padding: 36% 20px 24px 26px
          &__subtitle
             margin-bottom: 12px
          &__text
