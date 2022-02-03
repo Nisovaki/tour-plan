@@ -1,0 +1,83 @@
+*
+   box-sizing: border-box
+body
+   font-family: 'Mulish', sans-serif
+   background-color: $secondary
+   color: $text-colors
+.container
+   max-width: 1110px
+   margin: auto
+img
+   max-width: 100%
+.swiper-slide, .input, .message
+   &:focus
+      outline: none
+
+.input
+   background-color: #fff
+   border-radius: 4px
+   border: none
+   padding: 0 23px
+   height: 50px
+   font-style: normal
+   font-weight: normal
+   font-size: 12px
+   line-height: 15px
+
+.message
+   background-color: #fff
+   border-radius: 4px
+   border: none
+   padding: 18px 23px
+   resize: none
+   font-style: normal
+   font-weight: normal
+   font-size: 12px
+   line-height: 15px
+
+.button
+   white-space: nowrap
+   overflow: hidden
+   text-overflow: ellipsis
+   padding: 0 5px
+   min-width: 160px
+   min-height: 50px
+   padding: 18px
+   font-style: normal
+   font-weight: 700
+   font-size: 12px
+   line-height: 15px
+   color: $light
+   background-color: $primary
+   border: none
+   border-radius: 4px
+   cursor: pointer
+
+
+label.invalid
+   color: $light
+   position: absolute
+   left: 0px
+   top: 55px
+   background-color: $primary
+   padding: 3px
+   border-radius: 5px
+   z-index: 1
+   text-decoration: none
+   &::before
+      content: ""
+      border: 20px solid
+      position: absolute
+      top: -30px
+      left: 4px
+      border-color: $primary transparent transparent
+      border-left: 0
+      transform: rotate(180deg)
+      z-index: -1
+label.invalid[for="name"]
+   top: 40px
+   left: 0px
+label.invalid[for="phone"]
+   top: 40px
+   left: 0
+   

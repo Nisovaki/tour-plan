@@ -377,23 +377,6 @@ img {
   line-height: 15px;
 }
 
-.input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-.input-block {
-  position: relative;
-  -ms-flex-preferred-size: 47%;
-      flex-basis: 47%;
-}
-
 .message {
   background-color: #fff;
   border-radius: 4px;
@@ -423,6 +406,22 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.btn--interactive:hover {
+  background-color: #f05975;
+}
+
+.btn--interactive:active {
+  background-color: #f5a8b6;
+}
+
+.link--interactive:hover {
+  color: #59d9f0;
+}
+
+.link--interactive:active {
+  color: #a8e3f5;
 }
 
 label.invalid {
@@ -704,13 +703,40 @@ label.invalid[for="phone"] {
           align-items: flex-start;
 }
 
+.hotel-wrappers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .hotel__thank-title {
   width: 100%;
 }
 
 .hotel__thank-text {
+  display: block;
   margin-top: 15px;
   font-size: 15px;
+}
+
+.hotel__thank-button {
+  display: block;
+  background-color: #EC1F46;
+  color: #ffffff;
+  margin-top: 30px;
+  padding: 15px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .hotel-grid {
@@ -1350,7 +1376,6 @@ label.invalid[for="phone"] {
   position: relative;
   width: 350px;
   height: 54px;
-  border-radius: 4px;
 }
 
 .subscribe__input {
@@ -1364,6 +1389,7 @@ label.invalid[for="phone"] {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -1380,6 +1406,7 @@ label.invalid[for="phone"] {
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -1953,6 +1980,23 @@ label.invalid[for="phone"] {
           align-items: flex-end;
 }
 
+.input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.input-block {
+  position: relative;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -2488,6 +2532,18 @@ label.invalid[for="phone"] {
     margin-top: 5px;
     margin-left: 1px;
   }
+  .btn--interactive:hover {
+    display: none;
+  }
+  .btn--interactive:active {
+    display: none;
+  }
+  .link--interactive:hover {
+    display: none;
+  }
+  .link--interactive:active {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2770,15 +2826,23 @@ label.invalid[for="phone"] {
   .footer__title {
     font-size: 13px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
   .footer__form {
     width: 100%;
   }
   .footer-offer {
     margin: 0;
+  }
+  .input-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .input-block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
