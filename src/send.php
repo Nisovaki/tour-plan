@@ -9,10 +9,13 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$nameModal = $_POST['nameModal'];
+$phoneModal = $_POST['phoneModal'];
+$emailModal = $_POST['emailModal'];
 
 $subscribeBtn = $_POST['subscribeBtn'];
 $footerBtn = $_POST['footerBtn'];
-
+$modalBtn = $_POST['modalBtn'];
 
 if (isset($footerBtn)) {
     $title = "New Appeal";
@@ -21,12 +24,21 @@ if (isset($footerBtn)) {
     <b>Phone:</b> $phone<br>
     <b>Message:</b><br>$message
     ";
+} else if (isset($modalBtn)) {
+    $title = "Booking & Send us a feedback";
+    $body = "
+    <b>Name:</b> $nameModal<br>
+    <b>Phone:</b> $phoneModal<br>
+    <b>E-mail:</b> $emailModal<br>
+    <b>Message:</b><br>$message
+    ";
 } else {
     $title = "New Subscriber";
     $body = "
     <b>E-mail:</b> $email<br>
     ";
 };
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();

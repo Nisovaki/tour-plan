@@ -1,0 +1,84 @@
+*
+   box-sizing: border-box
+body
+   font-family: 'Mulish', sans-serif
+   background-color: $secondary
+   color: $text-colors
+.container
+   max-width: 1110px
+   margin: auto
+img
+   max-width: 100%
+.swiper-slide, .input, .message
+   &:focus
+      outline: none
+input
+   &::placeholder 
+      color: inherit
+      font-size: inherit
+      color: inherit
+
+textarea
+   &::placeholder 
+      color: inherit
+      font-size: inherit
+      color: inherit
+
+.form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+.input
+    border-radius: 4px
+    border: none
+    padding: 0 23px
+
+.button
+    background-color: $primary-color
+    color: $light
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    padding: 0 5px
+   
+.textarea
+    padding: 18px 23px
+    resize: none
+    border-radius: 4px
+    flex-basis: 100%
+    border: none
+
+.container
+    max-width: 1110px
+    margin: auto
+
+label.invalid
+    color: $light
+    position: absolute
+    left: 20px
+    top: -11px
+    background-color: $primary-color
+    padding: 3px
+    border-radius: 5px
+    z-index: 1
+    text-decoration: none
+    &::before
+        content: ""
+        border: 20px solid
+        position: absolute
+        bottom: -30px
+        left: 10px
+        border-color: $primary-color transparent transparent
+        border-left: 0
+        transform: rotate(10deg)
+        z-index: -1
+        
+#emailSub-error
+    // top: -30px
+    font-size: 12px
+    line-height: 15px
+    &::before
+        content: ""
+        left: 20px
