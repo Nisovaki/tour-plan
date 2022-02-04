@@ -535,8 +535,9 @@ label.invalid[for="phone"] {
   display: none;
 }
 
-.logo {
+.logo__image {
   width: 177px;
+  height: 19px;
 }
 
 .search {
@@ -685,7 +686,6 @@ label.invalid[for="phone"] {
 }
 
 .hotel-name {
-  width: 275px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -853,8 +853,8 @@ label.invalid[for="phone"] {
 }
 
 .swiper-slide__image {
-  height: 450px;
   width: 800px;
+  height: 450px;
 }
 
 .swiper-slide--gradient::after {
@@ -1226,6 +1226,8 @@ label.invalid[for="phone"] {
 }
 
 .packges-vertical__img {
+  width: 350px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px 8px 0 0;
@@ -1699,6 +1701,11 @@ label.invalid[for="phone"] {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+}
+
+.footer__logo--size {
+  width: 155px;
+  height: 173px;
 }
 
 .footer__categories {
@@ -2540,23 +2547,15 @@ label.invalid[for="phone"] {
   }
   .btn--interactive:hover {
     background-color: #EC1F46;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .btn--interactive:active {
     background-color: #EC1F46;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .link--interactive:hover {
     color: inherit;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .link--interactive:active {
     color: inherit;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
 }
 
